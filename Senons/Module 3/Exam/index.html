@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,500&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+		/>
+		<script src="scripts/scripts.js" defer></script>
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="side">
+				<div class="header">
+					<div class="avatar">
+						<img src="images\profile.jpg" alt="" />
+					</div>
+					<div class="title">My Profile</div>
+				</div>
+				<div class="menu">
+					<ul>
+						<li onClick="generateCard();">Matches</li>
+						<li class="active" onClick="test();">Messages</li>
+					</ul>
+				</div>
+				<ul id="message-column"> <!-- Message Column -->
+				</ul>
+			</div>
+			<div class="content">
+				<div class="card" id="cardContent">
+					<div class="user">
+						<img
+							class="user"
+							src="images\brownley.jpg"
+							alt=""
+						/>
+						<div class="profile">
+							<div class="name">Brownley<span>, 20</span></div>
+							<div class="local">
+								<i class="fas fa-map-marker-alt"></i>
+								<span>Bangkal, Davao</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="buttons">
+					<button class="heart" onClick="appendCard();">
+						<i class="fas fa-heart"></i>
+					</button>
+					<button class="no" onClick="popCard();">
+						<i class="fas fa-times"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

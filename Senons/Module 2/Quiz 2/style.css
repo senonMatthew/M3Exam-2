@@ -1,0 +1,252 @@
+body {
+	font-family: 'Montserrat', Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	background-color: #232937;
+	font-style: normal;
+	font-weight: 200;
+	margin: 5px 0px;
+}
+
+input::-webkit-outer-spin-button, 
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+} /* For removing the arrows in input number types */
+
+
+button:hover {
+	box-shadow: inset 0px 0px 10px 10px rgba(255, 255, 255, 0.1);
+}
+
+button:active {
+	box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+a {
+	text-decoration: none;
+}
+
+h2, h4 {
+	font-style: normal;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+
+input, select, button {
+	font-family: 'Montserrat', Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	color: #e4f0fb;
+	display: block;
+	background-color: #3D4860;
+  	padding: 5px;
+  	border: none;
+	margin-bottom: 25px;
+	border-radius: 5px;
+  	font-size: 22px;
+	font-weight: 200;
+}
+
+/* Main Flex */
+
+.main-flex {
+	display: flex;
+	align-items: center;
+}
+
+
+
+/* Main Tile */
+
+.main-tile {
+	color: #e4f0fb;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 67px 125px;
+	background-color: #333C50;
+	width: 40vw;
+	height: 700px;
+	border-radius: 20px;
+	box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.4);
+	z-index: 1;
+}
+
+/* Credentials Panel */
+.credentials-panel {
+	z-index: 0;
+	margin-left: 25px;
+	min-width: 20vw;
+	height: 600px;
+}
+
+.credentials-panel button {
+	margin-top: -20px;
+	outline: none;
+	background-color: #46536F;
+	border-radius: 100px;
+	cursor: pointer;
+	font-size: 12px;
+}
+
+/* Calculator Panel */
+
+.calculator-panel {
+	box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+	background-color: #262D3D;
+	border-radius: 20px;
+	margin-left: 20px;
+	height: 600px;
+	min-width: 18vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.calculator-panel small {
+	font-size: 10px;
+}
+
+.resultGood {
+	color: #27e8a7;
+}
+
+.resultMeh {
+	color: #e8b46a;
+}
+
+.resultBad {
+	color: #df4576;
+}
+
+.calculator-contents {
+	padding: 20px;
+}
+
+#comment {
+	margin-top: 40px;
+	font-size: 16px;
+}
+
+/* Alternate Tile */
+
+.alt-tile {
+	color: #e4f0fb;
+	margin: 67px 125px;
+	background-color: #333C50;
+	width: 30vw;
+	height: 320px;
+	border-radius: 20px;
+	box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.4);
+	
+	display: grid;
+	grid-template-columns: 16vw 10vw 4vw;
+	grid-template-rows: 80px 80px 80px 80px;
+	z-index: 0;
+	transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+#buttonOff {
+	opacity: 0;
+}
+
+#offToggle {
+	transform: translateX(-50vw);
+}
+
+#onToggle {
+	transform: translateX(0);
+}
+
+/* Grid Layout */
+	
+.gridTitle {
+	justify-self: center;
+	align-self: end;
+	grid-column: 1/4;
+}
+.gridQuantity {
+	justify-self: center;
+	align-self: end;
+}
+.gridName {
+	justify-self: center;
+	align-self: end;
+}
+.gridSend {
+	justify-self: start;
+	align-self: end;
+}
+.gridQuantity input{
+	width: 3vw;
+}
+.gridName input {
+	width: 13vw;
+}
+.gridCalories input {
+	width: 8vw;
+}
+.gridContainer {
+	background-color: #3F4B64;
+	grid-column: 1/4;
+	padding: 10px;
+}
+
+.gridContainer h2 {
+	margin: 5px 50px;
+}
+
+.gridBottom {
+	background-color: transparent;
+	grid-column: 1/4;
+	padding: 10px;
+}
+
+.gridBottom h2 {
+	margin: 5px 50px;
+	color: #27e8a7;
+}
+
+.gridBottom button {
+	transform: translate(24vw, -50px);
+	z-index: -1;
+	background-color: #333C50;
+}
+
+/* Footer */
+
+.footer__banner {
+	width: 100%;
+	text-align: center;
+	margin-top: 100px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #e4f0fb;
+	color: #42675a;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border-top-width: 2px;
+}
+
+/* Color Palettes
+
+- Dark Theme
+Dark Background - #232937
+
+Dark Blue to Light Blue --
+#506477
+#7390aa
+#91b4d5
+#add7ff
+#e4f0fb
+
+Neon Green, Green, Moss Green --
+#27e8a7
+#32ae85
+#42675a
+
+Red - #df4576
+
+*/
+
+
+
+/* Senon, Matthew Ira C. */

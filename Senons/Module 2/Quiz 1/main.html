@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>M2Q1</title>
+		<script defer src="scripts.js"></script>
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	</head>
+
+	<body>
+		<section id="deck">
+		  <div class="card" onClick="switchCardStatus(0);" id="Plato">
+				<div class="name">
+					<h1>Plato</h1>
+				</div>
+				<img src="Images/R.jpg">
+			</div>
+			
+			<div class="card" onClick="switchCardStatus(1);" id="Aristotle">
+				<div class="name">
+					<h1>Aristotle</h1>
+				</div>
+				<img src="Images/20-aristotle-ancient-greek-philosopher-science-source.jpg">
+			</div>
+			
+			<div class="card" onClick="switchCardStatus(2);" id="Buddha">
+				<div class="name">
+					<h1>Buddha</h1>
+				</div>
+				<img src="Images/H.jpg">
+			</div>
+			
+			<div class="card" onClick="switchCardStatus(3);" id="Aurelius">
+				<div class="name">
+					<h1>Aurelius</h1>
+				</div>
+				<img src="Images/M.jpg">
+			</div>
+			
+			<div class="card" onClick="switchCardStatus(4);" id="Confucius">
+				<div class="name">
+					<h1>Confucius</h1>
+				</div>
+				<img src="Images/C.jpg">
+			</div>
+			
+		</section>
+		
+		<section>
+			<div class="buttonwrapper">
+				<button id="hidden" onclick="generateQuote();">Get Quote</button>
+			</div>
+			<div class="quote">
+				<h3 id="quoteText"></h3>
+				<h5 id="author"></h5>
+			</div>
+		</section>
+		
+		<div class="footer__banner">
+			<strong>Senon, Matthew Ira C.</strong>
+		</div>
+	</body>
+</html>
