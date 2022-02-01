@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/5514dc631b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style2.css" />
+    <title>Calorie One | Track Calorie</title>
+  </head>
+  <body>
+    <div class="container">
+      <header id="main-header">
+        <h2 class="logo">
+          <a href="#" class="secondary"
+            ><span class="primary">Cal</span>Only</a
+          >
+        </h2>
+      </header>
+      <section id="input-box" class="bg-light">
+        <div class="input-contain">
+
+          <div class="form-grp">
+            <input
+              type="text"
+              name="item"
+              id="item-field"
+              class="item-field"
+              required
+            />
+            <label class="label-contain">
+              <span class="label-name">Item</span>
+            </label>
+          </div>
+
+
+
+          <div class="form-grp">
+            <input
+              type="number"
+              name="calories"
+              id="calories-field"
+              class="calories-field"
+              required
+            />
+            <label class="label-contain">
+              <span class="label-name">Calories</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="btn-contain">
+
+          <div class="btn-default-state">
+
+            <button class="btn btn-primary add-btn">Add Item</button>
+
+            <button class="btn btn-med reset-btn">Reset</button>
+          </div>
+
+          <div class="btn-edit-state">
+            <div class="btn-grp">
+
+              <button class="btn btn-primary update-btn">Update</button>
+
+              <button class="btn btn-warn delete-btn">Delete</button>
+            </div>
+
+            <button class="btn btn-med back-btn">Back</button>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="total-cal-contain" class="bg-light">
+        <p class="lead secondary">
+          Total Calories : <span id="total-cal">0</span> kcal
+        </p>
+      </section>
+
+
+      <ul id="item-lists"></ul>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

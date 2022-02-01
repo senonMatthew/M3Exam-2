@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta charset = "utf-8"/>
+        <title>Calorie Calculator</title>
+    </head>
+    <body class="bg-dark text-white">
+        <div class="p-5 mb-2">
+            <div class="container-fluid">
+                <div class="center-block"> 
+                <h1>Calorie Calculator</h1>
+                </div>
+                <div class="row">
+                <div class="center-block">
+                    <label for="male">
+                Male: 
+                <input type="radio" name="choose" id="male"/>
+                </label>
+                <label for="female">
+                Female: 
+                <input type="radio" name="choose" id="female"/>
+            </label><br>
+    
+            <label for="work">Work:
+                <select id="work">
+                    <option value="0">None</option>
+                    <option value="800">Desk job</option>
+                    <option value="1000">Moderate activity</option>
+                    <option value="1400">High activity</option>
+                </select>
+            </label><br>
+            <label for="activity">Activity:
+            <select id="activity">
+                <option value="0">None</option>
+                <option value="3">Walking(slow)</option>
+                <option value="7">Walking(fast)</option>
+                <option value="7">Running(slow)</option>
+                <option value="15">Running(fast)</option>
+                <option value="7">Gym</option>
+                <option value="4">Bicycling(10km/h)</option>
+                <option value="7">Bicycling(22km/h)</option>
+                <option value="8">Swimming(slow)</option>
+                <option value="10">Swimming(fast)</option>
+            </select>
+            </label>
+            <div class="slider" id="slider">
+            <label for="duration">Duration:
+            <input type="range" value="0" min="0" max="480" step="5" id="duration">
+            <span id="slidervalue">0 min</span>
+            </label>
+            </div>
+
+            <input type="text" id ="age" placeholder="Age" autocomplete="on" step="any" min="1" value=""><br>
+            <input type="text" id="height" placeholder="Height (cm)" autocomplete="on" step="any" min="1" value=""/><br>
+            <input type="text" id="weight" placeholder="Weight (kg)"autocomplete="on" step="any" min="1" value=""/><br>
+            <button class="btn btn-primary" id="btn">Calculate</button>
+            <button class="btn btn-primary" id="reset">Reset</button>
+
+            <a href="C:\Users\ADMIN\Desktop\WEB DEVELOPMENT\Calorie-Calculator-DAMPAC\calorietracker.html">
+            <button class="btn btn-primary">
+                Next
+            </button>
+            </a>
+            <p id="result"></p>
+            </div>
+            </div>
+            <script type ="text/javascript" src="script.js"></script>
+            </div>
+         </div>
+    </body>
+</html>

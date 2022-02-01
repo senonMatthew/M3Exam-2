@@ -1,0 +1,32 @@
+h1 {
+    text-align: center;
+    font-family: Candara;
+    color: #232d60;
+    margin-top: 100px;
+}
+
+h2 {
+    color: #232d60;
+    margin-left: 350px;
+    font-family: monospace;
+}
+
+html {
+    background-color: black;
+    margin-top: 50px;
+    margin-bottom: 180px;
+    background-image: url(images/background.png);
+}
+
+p {
+    color: #232d60;
+    font-size: 18px;
+    font-family: monospace;
+    text-align: center;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+img {
+    margin-left: 750px;
+}
