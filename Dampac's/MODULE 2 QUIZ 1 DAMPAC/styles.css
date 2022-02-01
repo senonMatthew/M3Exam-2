@@ -1,0 +1,43 @@
+body {
+    background: #413e42;
+    color: #fff;
+    font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif';
+}
+  
+h1, h2, small {
+    text-align: center;
+	margin: 3vw 1vw;
+	font-weight: 300;
+}
+
+.flexcontainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flexcontainer div {
+	background-color: aliceblue;
+	height: 18vw;
+	width: 20vw;
+	margin: 10px;
+	margin-top: -20px;
+	cursor: pointer;
+}
+
+.flexcontainer div img {
+	object-fit: fill;
+	height: 100%;
+	width: 100%;
+}
+
+.quotes {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+p {
+	margin-bottom: 30px;
+	text-align: center;
+}

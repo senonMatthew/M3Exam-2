@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Dungeons and Dragons 5E API</title>
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+  	<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/v4-shims.js"></script>
+    <script defer src="scripts/scripts.js"></script>
+</head>
+
+<body>
+	<section class="container">
+		<div class="flexgrid">
+			<article class="rightmenu">
+				<div class="rm_tagline"></div>
+				<div class="rm_menu">
+					<div class="rm_icon">
+						<i class="fas fa-grip-lines" onClick="consolePrint()"></i>
+					</div>
+				</div>
+			</article>
+			<article class="main">
+			  <div class="leftmenu">
+				<div class="logo"><img src="img/logo.png" /></div>
+				  <div class="lm_menu_container">
+					  <div class="lm_menu">
+						  <h4 onClick="refreshClassList()">Classes</h4>
+						  <h4 onClick="refreshRaceList()">Races</h4>
+                          <h4 onClick="refreshMonsterList()">Monsters</h4>
+					  </div>
+				  </div>
+				</div>
+				<div class="content">
+					<div class="cn_mid">
+						<div class="info">
+                            <h1 id="name">Welcome to the Generator!</h1>
+							<h4 id="entry1"></h4> <span id="e1text"></span>
+							<h4 id="entry2"></h4> <span id="e2text"></span>
+							<h4 id="entry3"></h4> <span id="e3text"></span>
+                        </div>
+						<div class="img">
+							<img src="img/D&D.png" />
+						</div>
+					</div>
+					<div class="cn_top">
+						<div class="sitename"><h1>Random D&D Generator</h1></div>
+						<div class="searchbar"></div>
+					</div>
+					<div class="cn_bottom"></div>
+				</div>
+			</article>
+		</div>
+	</section>
+	
+	<div class="footer__banner">
+		<strong>Senon, Matthew Ira |:| Dampac, Mohaimen</strong>
+	</div>
+</body>
+</html>
