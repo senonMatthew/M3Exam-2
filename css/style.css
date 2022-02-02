@@ -16,30 +16,6 @@
 .logo img {
 	width: 120px;
 }
-.navbar ul {
-	background: #000000;
-	width: 120px;
-	text-align: center;
-	border-bottom-right-radius: 25px;
-	margin-top: -10px;
-}
-.navbar ul li {
-	list-style: none;
-}
-.navbar ul li a {
-	display: inline-block;
-	color: #ccc;
-	text-decoration: none;
-	padding: 5px;
-	text-transform: uppercase;
-	font-size: 0.9rem;
-}
-.navbar ul li a:hover{
-	color: #019791;
-}
-.navbar ul .active a{
-   color: #019791;
-}
 .social a{
    padding: 5px;
    text-decoration: none;
@@ -74,6 +50,15 @@
 	background: rgba(1, 151, 145, 0.5);
 	margin-left: 50px;
 }
+.banner h1 a {
+	color: #ccc;
+	font-family: 'Staatliches', cursive;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.banner h1 a:hover{
+	color: #019791;
+}
 .banner p {
 	font-size: 1.5rem;
 	color: #ccc;
@@ -98,21 +83,27 @@
 	text-align: justify;
 	line-height: 1.7rem;
 }
+h4 span {
+	background: rgba(1, 151, 145, 0.5);
+	font-family: 'Staatliches', cursive;
+	border-radius: 10px;
+	padding: 0px 10px;
+}
+h4 a {
+	color: #ccc;
+	font-family: 'Staatliches', cursive;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+h4 a:hover{
+	color: #019791;
+}
 
 /*for small screens*/
 @media screen and (max-width: 460px){
 	.body-about {
 		background-size: 150%;
 		background-position: center;
-	}
-	.navbar {
-		display: flex;
-		align-items: flex-end;
-		flex-direction: column;
-	}
-	.navbar ul {
-		border-bottom-left-radius: 25px;
-		border-bottom-right-radius: 0;
 	}
 	.banner h1 {
 		font-size: 4rem;
